@@ -25,14 +25,14 @@ Matplotlib / Seaborn – for optional visualization
 
 📂 Project Structure
 
-plant-disease-detection/
+plant-disease-detection/ 
 │
-├── dataset/                 Training data (excluded from GitHub)
-├── plantdisease_detection.ipynb  # Model training and evaluation notebook
-├── app.py                  # Streamlit app
-├── model/                  # Saved model (.h5 or .pkl)
-├── requirements.txt        # All dependencies
-└── README.md               # Project documentation
+├── dataset/                  Training data (excluded from GitHub)
+├── plantdisease_detection.ipynb   # Model training and evaluation notebook
+├── app.py                   # Streamlit app
+├── model/                   # Saved model (.h5 or .pkl)
+├── requirements.txt         # All dependencies
+└── README.md                # Project documentation
 
 
 Upload a leaf image
