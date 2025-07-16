@@ -1,4 +1,4 @@
-🌱 Plant Disease Detection System for Sustainable Agriculture
+🌱 Plant Disease Detection System for Sustainable Agriculture  
 This project uses deep learning to detect plant diseases from leaf images, helping farmers take timely and accurate actions. Built with a Streamlit web interface, this system enables quick, accessible, and user-friendly diagnosis for real-world agricultural use.
 
 🚀 Features
@@ -25,14 +25,14 @@ Matplotlib / Seaborn – for optional visualization
 
 📂 Project Structure
 
-plant-disease-detection/ 
+plant-disease-detection/  
 │
-├── dataset/                  Training data (excluded from GitHub)
-├── plantdisease_detection.ipynb   # Model training and evaluation notebook
-├── app.py                   # Streamlit app
-├── model/                   # Saved model (.h5 or .pkl)
-├── requirements.txt         # All dependencies
-└── README.md                # Project documentation
+├── dataset/                  Training data (excluded from GitHub)  
+├── plantdisease_detection.ipynb   # Model training and evaluation notebook  
+├── app.py                   # Streamlit app  
+├── model/                   # Saved model (.h5 or .pkl)  
+├── requirements.txt         # All dependencies  
+└── README.md                # Project documentation  
 
 
 Upload a leaf image
