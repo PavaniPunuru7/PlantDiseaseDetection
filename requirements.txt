@@ -3,5 +3,5 @@ numpy
 pandas
 matplotlib
 opencv-python-headless
-tensorflow==2.18.0
+tensorflow==2.16.1
 requests
