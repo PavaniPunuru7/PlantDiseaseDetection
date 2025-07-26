@@ -6,21 +6,16 @@ import os
 import requests
 from PIL import Image
 from io import BytesIO
+import gdown  # ✅ Added for downloading from Google Drive
 
-# ----------- Model download logic (Dropbox) -----------
+# ----------- Model download logic (Google Drive via gdown) -----------
 MODEL_PATH = "CNN_plantdiseases_model.keras"
-MODEL_URL = "https://www.dropbox.com/scl/fi/m852g1gh7ghpx97k79l9i/CNN_plantdiseases_model.keras?rlkey=pg5c13l9970vt1qy9abqpdtqg&st=gt6l89zi&dl=1"
+GOOGLE_DRIVE_ID = "1G9beVE_ir9XgqTNLjkeqQ01eEtpJvXsf"
 
 def download_model():
-    print("📦 Downloading model from Dropbox...")
-    response = requests.get(MODEL_URL, stream=True)
-    if response.status_code == 200:
-        with open(MODEL_PATH, "wb") as f:
-            for chunk in response.iter_content(1024 * 1024):  # 1MB chunks
-                f.write(chunk)
-        print("✅ Model downloaded successfully.")
-    else:
-        raise Exception(f"❌ Failed to download model. Status code: {response.status_code}")
+    print("📦 Downloading model from Google Drive using gdown...")
+    url = f"https://drive.google.com/uc?id={GOOGLE_DRIVE_ID}"
+    gdown.download(url, MODEL_PATH, quiet=False)
 
 # Download if not already present
 if not os.path.exists(MODEL_PATH):
