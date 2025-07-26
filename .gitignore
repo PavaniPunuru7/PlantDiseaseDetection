@@ -12,8 +12,6 @@ venv/
 env/
 ENV/
 
-# Model file (we'll download it at runtime)
-CNN_plantdiseases_model.keras
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
