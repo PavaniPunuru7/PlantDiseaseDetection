@@ -7,12 +7,12 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-# ----------- Model download logic (Google Drive) -----------
+# ----------- Model download logic (Dropbox) -----------
 MODEL_PATH = "CNN_plantdiseases_model.keras"
-MODEL_URL = "https://drive.google.com/uc?export=download&id=1G9beVE_ir9XgqTNLjkeqQ01eEtpJvXsf"
+MODEL_URL = "https://www.dropbox.com/scl/fi/m852g1gh7ghpx97k79l9i/CNN_plantdiseases_model.keras?rlkey=pg5c13l9970vt1qy9abqpdtqg&st=gt6l89zi&dl=1"
 
 def download_model():
-    print("📦 Downloading model from Google Drive...")
+    print("📦 Downloading model from Dropbox...")
     response = requests.get(MODEL_URL, stream=True)
     if response.status_code == 200:
         with open(MODEL_PATH, "wb") as f:
