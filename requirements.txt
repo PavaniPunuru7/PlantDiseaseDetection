@@ -3,6 +3,6 @@ numpy
 pandas
 matplotlib
 opencv-python-headless
-tensorflow-cpu==2.16.1
+tensorflow-cpu
 requests
 
